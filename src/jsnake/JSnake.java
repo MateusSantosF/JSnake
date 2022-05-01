@@ -1,7 +1,10 @@
 package jsnake;
 
 import enums.Move;
+import java.awt.BorderLayout;
 import java.util.Scanner;
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
 import model.Board;
 
 /**
@@ -19,6 +22,8 @@ public class JSnake {
         Scanner sc = new Scanner(System.in);
         boolean lose = false;
 
+        
+        
         while (!lose) {
 
             String direction = sc.next();
@@ -31,8 +36,8 @@ public class JSnake {
         }
         if (lose) {
             System.out.println("\n\n\n|==============|\n\tYOUR LOSE\n|==============|");
-        }
-
+        }       
+        
     }
 
 }
